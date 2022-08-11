@@ -1,0 +1,159 @@
+h1,h2 {
+    text-align: center;
+
+}
+
+.profile__name {
+    margin-top: 55px;
+    margin-bottom: 50px;
+}
+
+/* Reloj */
+.reloj-container {
+    margin-left: 35%;
+    margin-bottom: 30px;
+    height: 250px;
+    width: 30%;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 2.5em;
+    background-color: #ff00dd83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem auto;
+    border-radius: 50px;
+    transition: transform 1s;
+}
+.reloj-container:hover {
+    transform: scale(1.2);
+}
+
+/*Caluladora*/
+.calculator-fondo {
+    height: 30%;
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 0px;
+    padding-top: 0px;
+}
+
+.calculator-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 80vh;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(90px, auto) repeat(5, 55px);
+}
+  
+.calculator-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+  
+  .calculator-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+  
+.span-two {
+    grid-column: span 2;
+}
+  
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+  
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+  
+.output .current-operand {
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* Lista de tareas */
+
+.lista-de-tareas {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+  
+.search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+  
+form {
+    display: flex;
+}
+  
+input {
+    padding: 15px 10px;
+    outline: none;
+    width: 400px;
+}
+  
+.li-container {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+  
+ul {
+    padding: 0;
+}
+  
+li {
+    list-style: none;
+    background-color: rgb(223, 143, 212);
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+}
+  
+li p {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+}
+  
+.btn-delete {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    background-color: var(--first-color);
+    color: #fff;
+    padding: 1.15rem 1.5rem;
+    border-radius: .5rem;
+    transition: .3s;
+    box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), .25);
+}
+  
+.btn-delete:hover {
+    cursor: pointer;
+    background-color: rgba(238, 15, 15, 0.808);
+}
+
+
+
+
+
